@@ -45,11 +45,9 @@ module.exports = {
   /* Creates the tobygit directory and appropriate subdirectories
    * in the current working directory.
    */
-  createTobygitDir: function(callback) {
+  createTobygitDir: function() {
     var tobygitDirPath = path.join(this.workingDir(), this.TOBYGIT_DIR)
     fs.mkdirSync(tobygitDirPath);
     fs.mkdirSync(path.join(tobygitDirPath, 'objects'));
   },
-}
-
-console.log(module.exports.tobygitDirPath());
+};

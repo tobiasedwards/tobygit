@@ -1,0 +1,1 @@
+{"type":"blob","contents":"{\n  \"type\": \"tree\",\n  \"objects\": [\n    {\"name\": \"blob1\", \"hash\": \"auy8389f38fb38bf3\"},\n    {\"name\": \"tree2\", \"hash\": \"2h8fhhhf39hh93ff9\"}\n  ]\n}\n"}

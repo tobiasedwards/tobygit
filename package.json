@@ -9,6 +9,10 @@
   "author": "Tobias Edwards",
   "license": "ISC",
   "bin": {
-    "tgit": "bin/tgit.js"
+    "tgit-init": "bin/tgit-init.js",
+    "tgit-index": "bin/tgit-index.js"
+  },
+  "dependencies": {
+    "sha1": "^1.1.1"
   }
 }

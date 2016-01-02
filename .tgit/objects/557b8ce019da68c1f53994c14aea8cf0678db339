@@ -1,0 +1,1 @@
+{"type":"blob","contents":"#! /usr/bin/env node\n\nvar dir = require('../src/dir');\n\nif (dir.tobygitDirPath() === null) {\n  dir.createTobygitDir();\n  console.log('tobygit initialised');\n} else {\n  console.log('tobygit directory already exists');\n}\n"}
