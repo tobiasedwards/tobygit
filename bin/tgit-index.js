@@ -17,12 +17,22 @@ if (dir.tobygitDirPath() !== null) {
       var headPath = path.join(dir.tobygitDirPath(), 'head');
 
       fs.open(headPath, 'w', function(err, fd) {
+        if (err) {
+          console.error(err);
+          return;
+        }
+
         fs.write(fd, JSON.stringify(head), function(err, written, string) {
+          if (err) {
+            console.error(err);
+            return;
+          }
+
           console.log('indexing complete');
         });
       });
     });
   });
 } else {
-  console.log('tobygit has not been initialised\ntry running tgit-init');
+  console.error('tobygit has not been initialised\ntry running tgit-init');
 }
