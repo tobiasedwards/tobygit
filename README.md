@@ -1,6 +1,8 @@
 # tobygit
 Toby's javascript git implementation.
 
+I had attempted to write an implementation of git using node.js to give myself a deeper understanding of git internals. This is still something I will try to do in the future but currently it's at a bit of a stand still.
+
 ## Current Features
 ### Initialisation: [`tgit-init`](https://github.com/tobiasedwards/tobygit/blob/master/bin/tgit-init.js)
 Creates the [`.tgit/`](https://github.com/tobiasedwards/tobygit/tree/master/.tgit) directory in the directory where the command is called.
